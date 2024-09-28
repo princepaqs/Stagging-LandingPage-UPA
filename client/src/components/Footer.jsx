@@ -1,0 +1,34 @@
+import React from 'react'
+import img from '../assets/footer_logo.png';
+function Footer() {
+  return (
+    <div className='bg-[#D9534F] h-[35svh]'>
+         {/* about */}
+        <div id="about" className='fix w-full h-[30svh] flex items-center justify-center'>
+            <div className='w-5/6 h-full flex items-center justify-start lg:gap-10 lg:p-10'>
+            <div>
+            <img src={img} alt="" className="w-[120px] lg:w-[20svh]" />
+            </div>
+            <div className='text-white text-sm font-semibold flex flex-col px-10'>
+                <a href="#">Home</a>
+                <a href="#about">About Us</a>
+                <a href="">FAQs</a>
+                <a href="">Privacy Policty</a>
+                <a href="">Terms of service</a>
+            </div>
+            
+            </div>
+        </div>
+
+        <div className='w-full flex items-center justify-center'>
+        <div className='w-5/6 flex items-center justify-center lg:justify-end'>
+            <a href="" className='text-white text-xs font-semibold'>© 2024 UPA. All Rights Reserved.</a>
+        </div>
+        </div>
+            
+
+    </div>
+  )
+}
+
+export default Footer
