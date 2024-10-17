@@ -1,36 +1,38 @@
 import React from 'react';
 import img from '../assets/logo.png';
+
+function downloadApp() {
+  const downloadLink = document.createElement('a');
+  downloadLink.href = "/UPA-v4.apk";  // Ensure this is the correct path
+  downloadLink.setAttribute('download', 'UPA-v4.apk');
+  downloadLink.click();
+}
+
 function Header() {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about-section');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <div className='px-6 py-4 text-xs shadow-md flex flex-row items-center justify-center justify-between'>
-      <div className=''>
-        <img src={img} alt="" className=" w-[50px]" />
+    <div className='px-4 py-2 text-xs shadow-md flex flex-row items-center justify-between'>
+      <div>
+        <img src={img} alt="Logo" className="w-[40px] sm:w-[50px]" />
+      </div>
+      <div className='flex flex-row items-center text-[10px] lg:text-sm font-semibold'>
+        <div className='p-1 sm:p-2'>
+          <a href="#home">Home</a>
         </div>
-      <div className='flex flex-row items-center justify-between text-xs lg:text-sm font-semibold'>
-      <div className='p-2'>
-        <a href="#home">Home</a>
-      </div>
-      <div className='p-2'>
-        <a href="#about">About Us</a>
-      </div>
-      <div className='p-2'>
-        <a href="#services">Services</a>
-      </div>
-      </div>
-      <div className=''>
-          <a href="#download" className='bg-[#D9534F] cursor-pointer px-4 py-2 rounded-3xl text-xs text-white font-bold inline-block'>
-            Download App
-          </a>
-
+        <div className='p-1 sm:p-2'>
+          <a href="#about">About Us</a>
         </div>
-
+        <div className='p-1 sm:p-2'>
+          <a href="#services">Services</a>
+        </div>
+      </div>
+      <div>
+        <button 
+          className='bg-[#D9534F] cursor-pointer px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-3xl text-[10px] lg:text-sm text-white font-bold inline-block' 
+          onClick={downloadApp}
+        >
+          Download App
+        </button>
+      </div>
     </div>
   );
 }
