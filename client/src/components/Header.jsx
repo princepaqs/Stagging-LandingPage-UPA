@@ -10,24 +10,24 @@ function downloadApp() {
 
 function Header() {
   return (
-    <div className='px-6 py-4 text-xs shadow-md flex flex-row items-center justify-between'>
+    <div className='px-4 py-2 text-xs shadow-md flex flex-row items-center justify-between'>
       <div>
-        <img src={img} alt="Logo" className="w-[50px]" />
+        <img src={img} alt="Logo" className="w-[40px] sm:w-[50px]" />
       </div>
-      <div className='flex flex-row items-center text-xs lg:text-sm font-semibold'>
-        <div className='p-2'>
+      <div className='flex flex-row items-center text-[10px] lg:text-sm font-semibold'>
+        <div className='p-1 sm:p-2'>
           <a href="#home">Home</a>
         </div>
-        <div className='p-2'>
+        <div className='p-1 sm:p-2'>
           <a href="#about">About Us</a>
         </div>
-        <div className='p-2'>
+        <div className='p-1 sm:p-2'>
           <a href="#services">Services</a>
         </div>
       </div>
       <div>
         <button 
-          className='bg-[#D9534F] cursor-pointer px-4 py-2 rounded-3xl text-xs text-white font-bold inline-block' 
+          className='bg-[#D9534F] cursor-pointer px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-3xl text-[10px] lg:text-sm text-white font-bold inline-block' 
           onClick={downloadApp}
         >
           Download App
