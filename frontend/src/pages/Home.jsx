@@ -41,20 +41,13 @@ function Home() {
         {/* about */}
         <div id="about" className='w-full flex justify-center py-5'>
           <div className='w-5/6 h-full'>
-            <h1 className='pt-5 text-2xl lg:text-3xl font-bold'>About</h1>
-            <p className='py-5 text-xs lg:text-xl'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              {showMoreAbout && (
-                <>
-                  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </>
-              )}
+            <h1 className='pt-5 text-2xl lg:text-3xl font-bold'>About Us</h1>
+            <p className='py-4 text-xs lg:text-lg text-justify'>
+            Experience the future of urban rentals at your fingertips! Our app simplifies the rental process, allowing you to effortlessly explore available properties, manage your listings, 
+            and connect with potential tenants—all in one convenient platform. With features like smart property searching and dynamic filters, finding your ideal home has never been easier.
+            UPA is a user-friendly app designed for seamless property rentals, connecting tenants and owners with ease. From discovering listings to managing leases and payments, UPA streamlines 
+            every step in one secure platform.
             </p>
-            <button className='text-blue-500 underline text-[10px] lg:text-xs' onClick={toggleShowMoreAbout}>
-              {showMoreAbout ? 'Show Less' : 'Show More'}
-            </button>
           </div>
         </div>
 
@@ -96,17 +89,25 @@ function Home() {
         {/* download */}
         <div id="download" className='w-full flex justify-center pt-5'>
           <div className='w-5/6 h-full'>
-            <div className='flex flex-row items-start justify-between gap-4'>
-              <div className='w-1/2 flex flex-col lg:gap-5'>
-                <h1 className='text-xl lg:text-3xl font-bold'>Download our app</h1>
-                <p className='py-5 text-xs lg:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div className='flex flex-row justify-between gap-4'>
+              <div className='w-1/3 flex flex-col'>
+              <h1 className='text-xl lg:text-3xl font-bold'>Download our app</h1>
+                <br />
+                <p className='py-2 text-xs lg:text-lg text-justify'>
+                  <strong>Download now</strong> to unlock exclusive access to the best rental options in your area and manage your 
+                  property seamlessly. <strong>Scan the QR code</strong> or click the button below to get started!
+                </p>
               </div>
-              <div className='w-1/2 h-[50svh] flex flex-col items-center justify-center gap-2'>
-                <img src={qr} alt="" className="object-cover object-center w-[250px] rounded-3xl p-4" />
+              <div className='w-1/3 flex flex-col items-center justify-center'>
+                <img src={qr} alt="QR Code" className="object-cover object-center w-[250px] rounded-3xl p-4" />
                 <div className='bg-[#D9534F] text-white py-2 px-10 rounded-xl text-sm font-semibold cursor-pointer mb-20' 
                   onClick={downloadApp}>
                   Download
                 </div>
+              </div>
+
+              <div className='w-1/3 flex flex-col items-center'>
+                <img src="/mobile-view.png" alt="Phone" className="object-cover object-center w-[500px] rounded-3xl" style={{ height: 'auto' }} />
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../assets/footer_logo.png';
 function Footer() {
   return (
-    <div className='bg-[#D9534F] h-[35svh]'>
+    <div className='bg-[#8C0909] h-[35svh]'>
          {/* about */}
         <div id="about" className='fix w-full h-[30svh] flex items-center justify-center'>
             <div className='w-5/6 h-full flex items-center justify-start lg:gap-10 lg:p-10'>
@@ -13,8 +13,8 @@ function Footer() {
                 <a href="#">Home</a>
                 <a href="#about">About Us</a>
                 <a href="">FAQs</a>
-                <a href="">Privacy Policty</a>
-                <a href="">Terms of service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms and Condition</a>
             </div>
             
             </div>
