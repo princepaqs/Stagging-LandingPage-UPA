@@ -10,11 +10,10 @@ function Footer() {
             <img src={img} alt="" className="w-[120px] lg:w-[20svh]" />
             </div>
             <div className='text-white text-sm font-semibold flex flex-col px-10'>
-                <a href="#">Home</a>
-                <a href="#about">About Us</a>
-                <a href="">FAQs</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Terms and Condition</a>
+                <a href="/">Home</a>
+                <a href="/frequently-asked-questions">FAQs</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-and-condition">Terms and Condition</a>
             </div>
             
             </div>
