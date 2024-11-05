@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 function PrivacyPolicy() {
     return (
         <>
+        <div className="font-poppins">
             <Header1 />
             <div className="privacy-policy-container" style={{ padding: '20px', maxWidth: '800px', margin: 'auto', marginBottom: '100px' }}>
                 <br />
@@ -14,7 +15,7 @@ function PrivacyPolicy() {
                 <p className="text-justify" style={{ lineHeight: '2' }}><strong>Effective Date:</strong> November 05, 2024</p>
                 <p className="text-justify" style={{ lineHeight: '2' }}><strong>Last Updated:</strong> November 05, 2024</p>
                 <br />
-                <p className="text-justify" style={{ lineHeight: '2' }}>Thank you for choosing UPA (Urban Property Rental Application), owned and operated by [Your Company Name]. Your privacy is important to us, and this Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our app.</p>
+                <p className="text-justify" style={{ lineHeight: '2' }}>Thank you for choosing UPA, owned and operated by [Your Company Name]. Your privacy is important to us, and this Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our app.</p>
                 <br />
 
                 <h2 className="text-2xl font-semibold mt-5 mb-2">1. Information We Collect</h2>
@@ -72,6 +73,7 @@ function PrivacyPolicy() {
                 <p className="text-justify" style={{ lineHeight: '2' }}><strong>Email </strong> <a href="mailto:support.upa@gmail.com"> : support.upa@gmail.com</a></p>
             </div>
             <Footer />
+        </div>
         </>
     );
 }

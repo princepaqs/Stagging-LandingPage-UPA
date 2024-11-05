@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 function TermsCondition() {
     return (
         <>
+        <div className="font-poppins">
             <Header1 />
             <div className="terms-condition-container" style={{ padding: '20px', maxWidth: '800px', margin: 'auto', marginBottom: '100px' }}>
                 <br />
@@ -97,6 +98,7 @@ function TermsCondition() {
                 </p>
             </div>
             <Footer />
+        </div>
         </>
     );
 }
