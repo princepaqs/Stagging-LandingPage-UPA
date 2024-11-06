@@ -66,7 +66,7 @@ function TermsCondition() {
 
                 <h2 className="text-2xl font-semibold mt-5 mb-2">7. Privacy Policy</h2>
                 <p className="text-justify" style={{ lineHeight: '2' }}>
-                    Your privacy is important to us. Please refer to our Privacy Policy for information on how we collect, use, and protect your personal information.
+                    Your privacy is important to us. Please refer to our <a href="/privacy-policy"> <u>Privacy Policy</u></a> for information on how we collect, use, and protect your personal information.
                 </p>
 
                 <h2 className="text-2xl font-semibold mt-5 mb-2">8. Limitation of Liability</h2>
@@ -76,12 +76,12 @@ function TermsCondition() {
 
                 <h2 className="text-2xl font-semibold mt-5 mb-2">9. Dispute Resolution</h2>
                 <p className="text-justify" style={{ lineHeight: '2' }}>
-                    Any disputes arising out of or related to these Terms or your use of UPA shall be resolved through binding arbitration in accordance with the rules of [insert arbitration association or organization relevant to your jurisdiction]. The arbitration shall take place in [Your City or State], and the arbitrator's decision shall be final and binding.
+                    Any disputes arising out of or related to these Terms or your use of UPA shall be resolved through binding arbitration in accordance with the rules of [insert arbitration association or organization relevant to your jurisdiction]. The arbitration shall take place in Caloocan City, and the arbitrator's decision shall be final and binding.
                 </p>
 
                 <h2 className="text-2xl font-semibold mt-5 mb-2">10. Governing Law</h2>
                 <p className="text-justify" style={{ lineHeight: '2' }}>
-                    These Terms shall be governed by and construed in accordance with the laws of [Your Country or State], without regard to its conflict of laws principles.
+                    These Terms shall be governed by and construed in accordance with the laws of Philippines, without regard to its conflict of laws principles.
                 </p>
 
                 <h2 className="text-2xl font-semibold mt-5 mb-2">11. Changes to Terms</h2>
