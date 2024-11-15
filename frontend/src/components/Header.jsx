@@ -3,8 +3,8 @@ import img from '../assets/logo.png';
 
 function downloadApp() {
   const downloadLink = document.createElement('a');
-  downloadLink.href = "/UPA-v4.apk";  // Ensure this is the correct path
-  downloadLink.setAttribute('download', 'UPA-v4.apk');
+  downloadLink.href = "/UPA.v8.apk";  // Ensure this is the correct path
+  downloadLink.setAttribute('download', 'UPA.v8.apk');
   downloadLink.click();
 }
 
