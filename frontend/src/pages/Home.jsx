@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import img from '../assets/bg.png';
-import qr from '/UPA-qr.png';
+import qr from '../assets/image.png';
 
 function Home() {
   const [showMoreAbout, setShowMoreAbout] = useState(false);
