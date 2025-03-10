@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import img from '../assets/bg.png';
-//import qr from '/UPA-qr.png';
+import qr from '../assets/UPA-qr.png';
 
 function Home() {
   const [showMoreAbout, setShowMoreAbout] = useState(false);
@@ -10,8 +10,8 @@ function Home() {
 
   function downloadApp() {
     const downloadLink = document.createElement('a');
-    downloadLink.href = "/UPA.v8.apk";  // Ensure this is the correct path
-    downloadLink.setAttribute('download', 'UPA.v8.apk');
+    downloadLink.href = "/UPA-v.2.0.8.apk";  
+    downloadLink.setAttribute('download', 'UPA-v.2.0.8.apk');
     downloadLink.click();
   }
 
@@ -104,8 +104,8 @@ function Home() {
                 </p>
               </div>
               <div className='w-1/3 flex flex-col items-center justify-center'>
-                {/*
-                <img src={qr} alt="QR Code" className="object-cover object-center w-[250px] rounded-3xl p-4" /> */}
+                
+                <img src={qr} alt="QR Code" className="object-cover object-center w-[250px] rounded-3xl p-4" />
                 <div className='bg-[#D9534F] text-white py-2 px-10 rounded-xl text-sm font-semibold cursor-pointer mb-20' 
                   onClick={downloadApp}>
                   Download
